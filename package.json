@@ -1,0 +1,15 @@
+{
+  "name": "suite-landing-page",
+  "version": "1.0.0",
+  "description": "### 🚀 [Meet-LandingPage-FrontendMentor](https://kevencb.github.io/Meet-LandingPage-FrontendMentor/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
+}
