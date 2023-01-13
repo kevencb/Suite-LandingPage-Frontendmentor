@@ -10,11 +10,13 @@ html
 
 body
     background-color: variables.$white
+    font-family: variables.$font
+    color: variables.$dark
 
 .container
-    width: 90%
+    width: 34rem
     max-width: 110rem
-    margin: auto
+    margin: 0 auto
 
 .button
     width: 18.2rem
@@ -34,7 +36,7 @@ body
     display: flex
     justify-content: space-between
     align-items: center
-    margin: 2.4rem auto
+    margin: 2.4rem auto 0
     &__logo
         width: 8.1rem
         img
@@ -48,6 +50,111 @@ body
     .info
         display: flex
         flex-direction: column
+        margin: 5.6rem auto
+        &__line
+            width: 15rem
+            align-self: flex-end
+            margin-bottom: .8rem
+            margin-right: 3.2rem
         &__title
             font-size: 3.8rem
             line-height: 4.4rem
+            font-weight: variables.$paragraph
+            margin-bottom: 3.2rem
+            span
+                font-weight: variables.$title
+        &__text
+            font-size: 1.6rem
+            font-weight: 400
+            line-height: 2.8rem
+            letter-spacing: 0.09px
+        &__button
+            @extend .button
+            font-size: 1.8rem
+            width: 25.6rem
+            background-color: variables.$dark
+            color: variables.$white
+            margin: 3.2rem 0 5.6rem
+        &__image
+            width: 100%
+            img
+                width: 100%
+                object-fit: cover
+                margin: auto
+.stats
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    text-align: center
+    gap: 4.6rem
+    .stat
+        &__number
+            font-size: 4.8rem
+            line-height: 5.6rem
+            font-weight: variables.$title
+        &__name
+            font-size: 1.6rem
+            font-weight: variables.$paragraph
+            letter-spacing: 0.25rem
+            text-transform: uppercase
+            color: variables.$gray
+
+.quote
+    display: flex
+    align-content: center
+    justify-content: center
+    flex-direction: column
+    background: variables.$dark
+    border-radius: 1.6rem
+    color: variables.$white
+    margin: 24rem 0 0
+    &__person
+        width: 100%
+        margin: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: -18rem
+        .quote__photo
+            width: 25rem
+            display: block
+        .quote__line
+            width: 5rem
+            margin: 4rem
+            display: block
+    &__info
+        text-align: center
+        &--title
+            font-size: 4rem
+            margin-bottom: 4rem
+            font-weight: 700
+        &--text
+            font-size: 1.8rem
+            margin-bottom: 4rem
+            line-height: 3.2rem
+            letter-spacing: 0rem
+        &--footer
+            h5
+                font-size: 1.8rem
+                text-transform: uppercase
+            h6
+                font-size: 1.6rem
+                text-transform: uppercase
+                font-weight: 400
+                margin: .8rem 0 6.4rem
+
+.footer
+    background-color: variables.$beige
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 5.6rem 0 8rem
+    gap: 4rem
+    &__copyrigth
+        font-size: 1.5rem
+    &__socials
+        display: flex
+        align-items: center
+        gap: 2.8rem

@@ -11,15 +11,17 @@ html {
 
 body {
   background-color: #faf8f6;
+  font-family: "Epilogue", sans-serif;
+  color: #172339;
 }
 
 .container {
-  width: 90%;
+  width: 34rem;
   max-width: 110rem;
-  margin: auto;
+  margin: 0 auto;
 }
 
-.button, .header__button {
+.button, .hero .info__button, .header__button {
   width: 18.2rem;
   height: 4.8rem;
   border: 0.1rem solid #172339;
@@ -38,7 +40,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2.4rem auto;
+  margin: 2.4rem auto 0;
 }
 .header__logo {
   width: 8.1rem;
@@ -53,10 +55,134 @@ body {
 .hero .info {
   display: flex;
   flex-direction: column;
+  margin: 5.6rem auto;
+}
+.hero .info__line {
+  width: 15rem;
+  align-self: flex-end;
+  margin-bottom: 0.8rem;
+  margin-right: 3.2rem;
 }
 .hero .info__title {
   font-size: 3.8rem;
   line-height: 4.4rem;
+  font-weight: 400;
+  margin-bottom: 3.2rem;
+}
+.hero .info__title span {
+  font-weight: 700;
+}
+.hero .info__text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0.09px;
+}
+.hero .info__button {
+  font-size: 1.8rem;
+  width: 25.6rem;
+  background-color: #172339;
+  color: #faf8f6;
+  margin: 3.2rem 0 5.6rem;
+}
+.hero .info__image {
+  width: 100%;
+}
+.hero .info__image img {
+  width: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 4.6rem;
+}
+.stats .stat__number {
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  font-weight: 700;
+}
+.stats .stat__name {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  color: #49566d;
+}
+
+.quote {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #172339;
+  border-radius: 1.6rem;
+  color: #faf8f6;
+  margin: 24rem 0 0;
+}
+.quote__person {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -18rem;
+}
+.quote__person .quote__photo {
+  width: 25rem;
+  display: block;
+}
+.quote__person .quote__line {
+  width: 5rem;
+  margin: 4rem;
+  display: block;
+}
+.quote__info {
+  text-align: center;
+}
+.quote__info--title {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+.quote__info--text {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+  line-height: 3.2rem;
+  letter-spacing: 0rem;
+}
+.quote__info--footer h5 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.quote__info--footer h6 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0.8rem 0 6.4rem;
+}
+
+.footer {
+  background-color: #f3ede7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5.6rem 0 8rem;
+  gap: 4rem;
+}
+.footer__copyrigth {
+  font-size: 1.5rem;
+}
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
